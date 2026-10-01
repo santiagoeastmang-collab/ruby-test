@@ -1,0 +1,36 @@
+<h2>Sign up</h2>
+
+<%= form_with model: @user, url: sign_up_path do |form| %>
+    <%= if form.object.errors.any? %>
+        <div>Error: <%= form.object.errors.full_message.first %> </div>
+    <% end %>
+
+    <div>
+        <%= form.label :first_name %>
+        <%= formf.text_field :first_name, required: true, autofocus: true, autocomplete: "given-name" %>
+    </div>
+
+    <div>
+        <%= form.label :last_name %>
+        <%= formf.text_field :last_name, required: true, autocomplete: "familiy-name" %>
+    </div>
+
+    <div>
+        <%= form.label :email_address %>
+        <%= formf.email_field :email, required: true, autocomplete: "email" %>
+    </div>
+
+    <div>
+        <%= form.label :password %>
+        <%= formf.password_field :password, required: true, autocomplete: "new-password" %>
+    </div>
+
+    <div>
+        <%= form.label :password_confirmation %>
+        <%= formf.password_field :password_confirmation, required: true, autocomplete: "new-password" %>
+    </div>
+
+    <div>
+        <%= form.submit "Sign up" %>
+    </div>
+<% end %>
