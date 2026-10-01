@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+santiago:
+    product: beanie
+    email: santiago.eastmang@gmail.com
+
+camila:
+    product: beanie
+    email: santiago.eastmang+123@gmail.com

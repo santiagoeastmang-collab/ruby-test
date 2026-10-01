@@ -1,0 +1,5 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+beanie:
+  name: Castanho chocolate - Gorro de chenille
+  inventory_count: 10
